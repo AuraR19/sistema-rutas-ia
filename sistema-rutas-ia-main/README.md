@@ -1,9 +1,6 @@
 # Sistema Inteligente de Rutas
 
 ## Actividad 3 – Aprendizaje Supervisado
-PDF:
-[pruebas_componente.pdf](https://github.com/user-attachments/files/33183622/pruebas_componente.pdf)
-[descripcion_datos.pdf](https://github.com/user-attachments/files/33183627/descripcion_datos.pdf)
 
 
 
