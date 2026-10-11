@@ -305,6 +305,82 @@ Los resultados de las pruebas y la descripción del dataset se encuentran en:
 Aura Cristina Restrepo Puentes
 
 
+ # Actividad 4 - Sistema Inteligente de Rutas 
 
+## Documentación
+- [Descripción de datos no supervisado](descripcion_datos_no_supervisado.pdf)
+- [Pruebas no supervisado](pruebas_no_supervisado.pdf)
 
- 
+---
+
+## 1. Descripción del proyecto
+Este proyecto desarrolla un sistema inteligente de rutas de transporte que integra técnicas de búsqueda y aprendizaje automático.  
+Su propósito es encontrar rutas, estimar la duración de los viajes y analizar patrones en los datos de transporte.
+
+El sistema combina:
+- Algoritmo de búsqueda **A***.
+- Modelo de aprendizaje **supervisado** para predecir la duración de los viajes.
+- Componente de aprendizaje **no supervisado** basado en **K-Means** para agrupar viajes con características similares.
+
+---
+
+## 2. Objetivo general
+Construir un sistema inteligente de rutas que integre búsqueda, aprendizaje supervisado y no supervisado para encontrar rutas, predecir tiempos de recorrido e identificar agrupaciones de viajes según sus características.
+
+---
+
+## 3. Tecnologías utilizadas
+- **Python**  
+- **pandas**  
+- **scikit-learn**  
+- **K-Means**  
+- **StandardScaler**  
+- **Git y GitHub**  
+
+---
+
+## 4. Funcionalidades del sistema
+El menú principal incluye:
+1. Buscar la mejor ruta.  
+2. Predecir la duración del viaje.  
+3. Agrupar viajes mediante K-Means.  
+4. Salir del sistema.  
+
+---
+
+## 5. Datos utilizados
+El archivo `dataset_agrupamiento.csv` contiene **150 registros sintéticos** de viajes.  
+Variables:  
+- `pasajeros`: cantidad de pasajeros.  
+- `distancia_km`: distancia recorrida en kilómetros.  
+- `numero_paradas`: número de paradas.  
+- `duracion_min`: duración del viaje en minutos.  
+
+> Los datos son sintéticos y se usan con fines académicos.
+
+---
+
+## 6. Componente de aprendizaje no supervisado
+El algoritmo **K-Means** agrupa registros según sus características.  
+Pasos:  
+1. Cargar dataset.  
+2. Verificar columnas.  
+3. Estandarizar variables.  
+4. Entrenar K-Means con 3 grupos.  
+5. Asignar grupo a cada registro.  
+6. Calcular métricas.  
+7. Guardar resultados en `resultados_agrupamiento.csv`.  
+
+Resultados:  
+- Registros: 150  
+- Grupos: 3  
+- Inercia: 117.57  
+- Silueta: 0.471  
+
+---
+
+## 7. Instalación
+```bash
+git clone https://github.com/AuraR19/sistema-rutas-ia.git
+cd sistema-rutas-ia
+python -m pip install pandas scikit-learn
